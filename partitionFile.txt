@@ -1,0 +1,4 @@
+GTR+G, 16S = 1-1741
+HKY+I+G, cox1 = 1742-3283
+GTR+I+G, cytb = 3284-4426
+GTR+I+G, apoB = 4427-6888

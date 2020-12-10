@@ -1,0 +1,1 @@
+ --msa /scratch/cluster/weekly/raxml/job_43216/sequenceAlignment.fasta --model /scratch/cluster/weekly/raxml/job_43216/partitionFile.txt  --opt-branches on --opt-model on --tree pars{10},rand{10} --all  --bs-trees autoMRE{200} --bs-cutoff 0.03 --force --threads 2 --prefix /scratch/cluster/weekly/raxml/job_43216/result
