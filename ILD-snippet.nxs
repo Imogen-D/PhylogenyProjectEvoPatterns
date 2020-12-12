@@ -1,0 +1,17 @@
+BEGIN PAUP;
+[Start logging to a file called ildtest.log in the current working directory]
+log file=ildtest.log;
+
+[Do the ILD test; note that the partition genes must have been defined in your NEXUS file as charpartition = genes, e.g., like the following example]
+BEGIN SETS;
+  charset 16S = 1-1741;                                    
+  charset cox1 = 1742-3283;                                
+  charset cytb = 3283-4426;
+  charset apoB = 4426-6888;
+  charpartition genes = 16s:16S, cox1:cox1, cytb:cytb, apoB:apoB;  
+END;                                                            
+
+hompart partition= genes nreps=100 / start=stepwise addseq=random nreps=10 savereps=no randomize=addseq rstatus=no hold=1 swap=tbr multrees=yes;
+
+log stop;
+END;
